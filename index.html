@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rendelések</title>
+    <link rel="stylesheet" href="style_control.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <button id="new-order-btn">Új rendelés</button>
+        <nav>
+          <ul>
+            <li><a href="#current-orders">Aktuális rendelések</a></li>
+            <li><a href="#completed-orders">Elkészült rendelések</a></li>
+            <li><a href="#settings">Beállítások</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+        <section id="current-orders">
+          <h2>Aktuális rendelések</h2>
+          <div id="order-list" class="order-grid"></div>
+        </section>
+        <section id="completed-orders">
+          <h2>Elkészült rendelések</h2>
+          <div id="completed-order-list" class="order-grid"></div>
+        </section>
+        <section id="settings">
+          <h2>Beállítások</h2>
+          <button id="reset-order" class="reset-btn">Visszaállítás</button>
+        </section>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
